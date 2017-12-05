@@ -1,0 +1,321 @@
+body {
+  background: #FAF2D9;
+}
+
+/*Wrapper*/
+#wrapper{
+  position:relative;
+  width:100%;
+}
+/*
+#wrapper img {
+  height:40px;
+}
+*/
+/*End wrapper*/
+
+/*Header*/
+
+header{
+  background:#FAF2D9;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:1000;
+}
+
+.mainHeader{
+  position:relative;
+  width:100%;
+}
+
+.logo{
+   margin: 26px 0 20px 0;
+}
+
+
+.logo h1 {
+    display: inline-block;
+    font-size: 22px;
+    /*text-transform: uppercase;*/
+  color:#111111;
+  position:relative;
+}
+
+.logo span {
+    display: inline-block;
+    font-size: 11px;
+    left: 10px;
+    position: relative;
+    top: -3px;
+}
+
+
+nav#mainNav{
+  float:right;
+  margin-top:2px;
+}
+
+nav#mainNav li {
+  display: inline-block;
+  position:relative;
+}
+
+
+nav#mainNav li a{
+    color: #111111;
+    display: block;
+    padding: 25px 15px;
+    position: relative;
+    text-transform: uppercase;
+
+}
+
+
+nav#mainNav li a.external{
+    color: #f08353;
+}
+
+
+
+
+nav#mainNav a.active:after {
+    border-bottom: 1px solid #111111;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 43px;
+    width: 14px;
+    z-index: 0;
+}
+
+
+.mobileBtn {
+  background:#ffffff;
+  padding:5px;
+  text-align:center;
+  border-radius:3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  z-index:1000;
+  display:none;
+}
+
+
+.mobileBtn i {
+  font-size:16px;
+  color:#111111;
+}
+
+/*End header*/
+
+
+
+
+/*Main slider*/
+
+.splash {
+  overflow:hidden;
+  position:relative;
+  margin-top:70px;
+}
+
+
+.overlay {
+    /*background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);*/
+  min-height: 800px;
+}
+
+.title {
+  text-align:center;
+}
+
+.title h1 {
+  font-size:64px;
+  line-height:80px;
+  font-weight:700;
+  font-family:'Lato', sans-serif;
+}
+
+.splash{
+  background: url(../img/logo_large.png);
+  /*background-attachment: fixed;*/
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  min-height: 800px;
+  /*background-color:#fafafa;*/
+}
+
+
+.caption {
+  /*top: 300px;*/
+  /*left: 0;*/
+  /*position: absolute;*/
+  text-align: center;
+  width: 100%;
+  margin-top:50px;
+  /*text-transform: uppercase;*/
+}
+
+
+.caption h1 {
+  line-height:36px;
+  font-size:36px;
+  font-weight:400;
+  font-family:'Lato', sans-serif;
+}
+
+.caption h1 span.new{
+  position:relative;
+}
+
+.caption h1 span.new:after {
+    border-bottom: 4px solid #111111;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 34px;
+    width: 19px;
+    z-index: 0;
+}
+
+.phones-container {
+  text-align:center;
+}
+
+.phones {
+  margin: 60px auto;
+  max-width:650px;
+}
+
+.phones .iphone {
+  float:left;
+}
+
+.phones .iphone img {
+  height:450px;
+}
+
+
+.phones .android {
+  float: right;
+}
+
+.phones .android img {
+  margin-top:-16px;
+  height:470px;
+}
+
+.phones .phone img.store {
+  margin-top:-16px;
+  height:40px;
+}
+
+.phones .iphone img.store {
+  margin-left:-16px;
+}
+
+/*End main slider*/
+
+.footer{
+  padding:40px 0;
+  margin-top:60px;
+  font-size:12px;
+  color:#666666;
+  text-align:center;
+}
+
+.footer .bLogo{
+  text-transform: uppercase;
+  color:#111111;
+  position:relative;
+}
+
+.footer .bLogo:after {
+    border-bottom: 2px solid #111111;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 1px;
+    top: 15px;
+    width: 10px;
+    z-index: 0;
+}
+
+/*End footer*/
+
+/*-------------------------------------------------------------------------*/
+
+/* Media queries */
+
+/*Landscape 1024 X 600 */
+@media only screen and (min-width: 1000px) and (max-width: 1030px){
+
+}
+
+
+/*iPad lanscape*/
+@media screen and (max-device-width: 960px){
+  .splash  {background-attachment: scroll;background-position:top center !important;background-size:cover;}
+  input, textarea{-webkit-appearance: none;-webkit-border-radius:0;}
+  #loaderInner {margin: -50px 0 0 -30px;}
+
+}
+
+
+/* Tablet Portrait size -> standard 960 */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+  .splash  {background-attachment: scroll;background-position:top center !important;background-size:cover;}
+
+}
+
+
+/* Mobile Landscape Size -> Tablet Portrait size*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+  .splash  {background-attachment: scroll;background-position:top center !important;background-size:cover;}
+  html{-webkit-text-size-adjust: none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;}
+
+  .logo, nav#mainNav{float:none;}
+  nav#mainNav{margin-right:0;}
+  nav#mainNav ul{display:none;margin-bottom:10px;}
+  nav#mainNav li{float:none; display:block;}
+  nav#mainNav a.active:after{right:1px;top:22px;}
+  nav#mainNav li a{padding:3px 0px;display:inline-block;}
+  .mobileBtn{display: inline-block;float: right;margin-right: 10px;margin-top: -51px;position: relative;}
+
+  .phones .phone img { display:none; }
+  .phones .phone img.store { display:block; margin:auto; margin-bottom:40px; }
+  .phones .android, .phones .iphone { float:none; text-align:center; }
+
+
+}
+
+/* Mobile Portrait Size -> Mobile Landscape Size */
+@media only screen and (max-width:479px) {
+
+  .splash  {background-attachment: scroll;background-position:top center !important;background-size:100%;}
+  html{-webkit-text-size-adjust: none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;}
+
+  .phones .phone img { display:none; }
+  .phones .phone img.store { display:block; margin:auto; margin-bottom:40px; }
+  .phones .android, .phones .iphone { float:none; text-align:center; }
+
+
+  .caption h1{font-size:22px;padding-left:30px;padding-right:30px;}
+  .logo, nav#mainNav{float:none;}
+  nav#mainNav{margin-right:0;}
+  nav#mainNav ul{display:none;margin-bottom:10px;}
+  nav#mainNav li{float:none; display:block;}
+  nav#mainNav a.active:after{right:1px;top:22px;}
+  nav#mainNav li a{padding:3px 0px;display:inline-block;}
+  .mobileBtn{display: inline-block;float: right;margin-right: 10px;margin-top: -51px;position: relative;}
+
+}
