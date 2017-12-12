@@ -283,12 +283,12 @@ nav#mainNav a.active:after {
   .splash  {background-attachment: scroll;background-position:top center !important;background-size:cover;}
   html{-webkit-text-size-adjust: none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;}
 
-  .logo, nav#mainNav{float:none;}
+  /*.logo, nav#mainNav{float:none;}*/
   nav#mainNav{margin-right:0;}
-  nav#mainNav ul{display:none;margin-bottom:10px;}
-  nav#mainNav li{float:none; display:block;}
-  nav#mainNav a.active:after{right:1px;top:22px;}
-  nav#mainNav li a{padding:3px 0px;display:inline-block;}
+  /*nav#mainNav ul{display:none;margin-bottom:10px;}*/
+  /*nav#mainNav li{float:none; display:block;}*/
+  /*nav#mainNav a.active:after{right:1px;top:22px;}*/
+  /*nav#mainNav li a{padding:3px 0px;display:inline-block;}*/
   .mobileBtn{display: inline-block;float: right;margin-right: 10px;margin-top: -51px;position: relative;}
 
   .phones .phone img { display:none; }
@@ -310,12 +310,12 @@ nav#mainNav a.active:after {
 
 
   .caption h1{font-size:22px;padding-left:30px;padding-right:30px;}
-  .logo, nav#mainNav{float:none;}
+  /*.logo, nav#mainNav{float:none;}*/
   nav#mainNav{margin-right:0;}
-  nav#mainNav ul{display:none;margin-bottom:10px;}
-  nav#mainNav li{float:none; display:block;}
-  nav#mainNav a.active:after{right:1px;top:22px;}
-  nav#mainNav li a{padding:3px 0px;display:inline-block;}
+  /*nav#mainNav ul{display:none;margin-bottom:10px;}*/
+  /*nav#mainNav li{float:none; display:block;}*/
+  /*nav#mainNav a.active:after{right:1px;top:22px;}*/
+  /*nav#mainNav li a{padding:3px 0px;display:inline-block;}*/
   .mobileBtn{display: inline-block;float: right;margin-right: 10px;margin-top: -51px;position: relative;}
 
 }
